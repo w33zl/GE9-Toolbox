@@ -11,7 +11,7 @@ GE Toolbox is a collection of scripts, tools and guides to simplify modding for 
 
 
 ## Installation
-1. Download [latest GE Toolbox release]([releases/latest](https://github.com/w33zl/GE-Toolbox/releases/latest))
+1. Download [latest GE Toolbox release](https://github.com/w33zl/GE-Toolbox/releases/latest)
 2. Unzip the contents of the `GE-Toolbox_vX.X.X` zip archive into your user scripts folder for GE (e.g. `%LocalAppData%\GIANTS Editor 64bit 9.0.3\scripts\`)
 3. (Re)start Giants Editor
 
