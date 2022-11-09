@@ -11,12 +11,13 @@ GE Toolbox is a collection of scripts, tools and guides to simplify modding for 
 
 
 ## Installation
-1. Download [latest GE Toolbox release](releases/latest)
-2. Unzip the contents of the `GE Toolbox` zip archive into your user scripts folder for GE (e.g. `%LocalAppData%\GIANTS Editor 64bit 9.0.3\scripts\`)
+1. Download [latest GE Toolbox release]([releases/latest](https://github.com/w33zl/GE-Toolbox/releases/latest))
+2. Unzip the contents of the `GE-Toolbox_vX.X.X` zip archive into your user scripts folder for GE (e.g. `%LocalAppData%\GIANTS Editor 64bit 9.0.3\scripts\`)
 3. (Re)start Giants Editor
 
+> ***Important:** Make sure you extract the contents of the zip archive directly into the scripts-folder. If you download the code manually using the "Download zip" option you should extract the subcontents of the "GE-Toolbox-master"-folder, i.e. the "GE Toolbox (by w33zl)" folder should be placed directly in the scripts-folder.*
 
-### Tips
+### Productivity Tips
 1. Install [GE-HAM](https://github.com/w33zl/GE-Hotkeys-and-Macros) to be able to bind keyboard shortcuts to the scripts above, see this video by Ola Haldor to [see GE-HAM in action](https://www.youtube.com/watch?v=8lUqKiSBndc).
 2. Install [AutoHotPie](https://github.com/dumbeau/AutoHotPie) to get convinient pie menu access to features in GE, see this video by OlaHaldor to [view the pie menu in action](https://www.youtube.com/shorts/t2iR5MWhxKI).
 
