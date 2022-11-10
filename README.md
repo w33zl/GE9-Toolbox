@@ -23,7 +23,7 @@ GE Toolbox is a collection of scripts, tools and guides to simplify modding for 
 
 
 ## Want to report a bug or have a great idea?
-I constantly strive to improve my scripts and tools, so please [create a ticket](/issues/new) and let me know what you think, wether it being constructive feedback or a bug report.
+I constantly strive to improve my scripts and tools, so please [create a ticket](https://github.com/w33zl/GE-Toolbox/issues/new) and let me know what you think, wether it being constructive feedback or a bug report.
 
 
 ## Like the work I do?
