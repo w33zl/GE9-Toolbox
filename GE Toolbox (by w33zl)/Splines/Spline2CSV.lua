@@ -50,7 +50,7 @@ local terrainNodeID = getChild(sceneNodeID, "terrain")
 
 local splineLength = getSplineLength( selectedNodeID ) ;
 
-print("\n#####[ Export Spline to Obj - by w33zl ]###########################################")
+print("\n#####[ Export Spline to CSV - by w33zl ]###########################################")
 print("Check GitHub for additonal information and latest updates: https://github.com/w33zl\n")
 
 if selectedNodeID == nil or selectedNodeID == 0 then
@@ -62,7 +62,7 @@ elseif not GHLib:IsSpline(selectedNodeID) then
 end
 
 local canContinue = true
-local outputFilename = openFileDialog("Choose a name for you new obj file", "*.obj")
+local outputFilename = openFileDialog("Choose a name for you new CSV file", "*.csv")
 
 if fileExists(outputFilename) then
     canContinue = (g_lastSplinteToObjFilename ~= nil and g_lastSplinteToObjFilename == outputFilename)
@@ -83,7 +83,7 @@ local dryRun = (outputFilename == "")
 --TODO: add option to get relative or world spline coordinates
 
 local function createObjFileContent()
-    local lineConfig = "l"
+    -- local lineConfig = "l"
     local output = ""
     local numberOfCVs = getSplineNumOfCV(selectedNodeID)
     local vertexIndex = 0
@@ -103,7 +103,8 @@ local function createObjFileContent()
         end
     end
 
-    return string.format("%s%s", output, lineConfig)
+    -- return string.format("%s%s", output, lineConfig)
+    return output
 end
 
 if dryRun then
@@ -112,12 +113,12 @@ if dryRun then
     print("====================================")
 else
     local fileId = createFile(outputFilename, FileAccess.WRITE)
-    fileWrite(fileId, "# Exported by 'Spline to Object' GE script by w33zl")
+    -- fileWrite(fileId, "# Exported by 'Spline to Object' GE script by w33zl")
     fileWrite(fileId, createObjFileContent())
     delete(fileId)
 
     local cleanedUpFilename = string.sub( outputFilename, 1, string.len( outputFilename ) - 1 )
-    cleanedUpFilename = string.gsub(cleanedUpFilename, "\\", "/")  
+    cleanedUpFilename = string.gsub(cleanedUpFilename, "\\", "/")
 
     if fileExists(outputFilename) then
         printf("Successfully created file '%s'", cleanedUpFilename)
