@@ -7,7 +7,7 @@ GE Toolbox is a collection of scripts, tools and guides to simplify modding for 
 ## Overview / Contents
 
 - [Export Spline to a .obj file](Spline2Obj.md)
-- *TBA*
+- [XML Tools](XMLTools.md)
 
 
 ## Installation
