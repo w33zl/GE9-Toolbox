@@ -1,4 +1,5 @@
 ![GE Toolbox](https://user-images.githubusercontent.com/7383510/200933607-30adf443-d2b2-49b0-8ec6-0a5abc0539e4.png)
+> _Note_: This the old GE Toolbox for Giants Editor 9 (FS22). The new version for GE 10 (FS25) is found on the [GE Toolbox](https://github.com/w33zl/GE-Toolbox) page.
 
 GE Toolbox is a collection of scripts, tools and guides to simplify modding for Farming Simulator. The goal is to make you more productive and spend less time on mundane tasks, letting you focus more on the creative parts of modding.
 
