@@ -65,17 +65,17 @@ local canContinue = true
 local outputFilename = openFileDialog("Choose a name for you new CSV file", "*.csv")
 
 if fileExists(outputFilename) then
-    canContinue = (g_lastSplinteToObjFilename ~= nil and g_lastSplinteToObjFilename == outputFilename)
+    canContinue = (g_lastSaveXMLMappingsFilename ~= nil and g_lastSaveXMLMappingsFilename == outputFilename)
 
     if not canContinue then
         print("ERROR: File already exists! Please re-run the script and choose the exact same filename again to force the script to override the file, or choose another filename.")
-        g_lastSplinteToObjFilename = outputFilename
+        g_lastSaveXMLMappingsFilename = outputFilename
     end
 end
 
 if not canContinue then return end
 
-g_lastSplinteToObjFilename = nil
+g_lastSaveXMLMappingsFilename = nil
 
 local dryRun = (outputFilename == "")
 
